@@ -5,10 +5,10 @@ local ItemsToDelete = {
     "StorySlashModel"
 }
 
-local attacksFolder = game.Workspace:FindFirstChild("attacks")
+local AttacksFolder = game.Workspace:FindFirstChild("Attacks")
 
-while true do -- Bu döngü sürekli çalışır
-    for _, item in pairs(attacksFolder:GetChildren()) do
+while true do
+    for _, item in pairs(AttacksFolder:GetChildren()) do
         for _, name in pairs(ItemsToDelete) do
             if item.Name == name then
                 item:Destroy()
@@ -16,5 +16,5 @@ while true do -- Bu döngü sürekli çalışır
             end
         end
     end
-    wait(1) -- Bu komut scripti 1 saniye bekletir
+    wait(0.1)
 end
