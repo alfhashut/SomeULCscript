@@ -16,5 +16,5 @@ while true do
             end
         end
     end
-    wait(0.1)
+    wait(0.03)
 end
