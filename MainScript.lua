@@ -1,14 +1,17 @@
--- This script will delete the item with the name "ItemToDelete" multiple times.
+local ItemsToDelete = {
+    "CharaSlashModel",
+    "KnifeWall",
+    "KnifeRingModel",
+    "StorySlashModel"
+}
 
-local ItemToDelete = game.Workspace:FindFirstChild("ItemToDelete")
-local NumberOfTimesToDelete = 9999999999999999 -- This is the number of times that the script will delete the item.
+local attacksFolder = game.Workspace:FindFirstChild("attacks")
 
-for i = 1, NumberOfTimesToDelete do
-
-    -- Delete the item.
-    ItemToDelete:Destroy()
-
-    -- Wait for 1 second.
-    wait(1)
-
+for _, item in pairs(attacksFolder:GetChildren()) do
+    for _, name in pairs(ItemsToDelete) do
+        if item.Name == name then
+            item:Destroy()
+            break
+        end
+    end
 end
