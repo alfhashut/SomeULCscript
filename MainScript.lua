@@ -3,6 +3,10 @@ local ItemsToDelete = {
     "KnifeWall",
     "KnifeRingModel",
     "StorySlashModel"
+    "TouchIt"
+    "Warn"
+    "FakeSoul"
+    "SoulRingModel"
 }
 
 local AttacksFolder = game.Workspace:FindFirstChild("Attacks")
