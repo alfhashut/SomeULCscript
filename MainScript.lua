@@ -11,7 +11,7 @@ local ItemsToDelete = {
 
 local AttacksFolder = game.Workspace:FindFirstChild("Attacks")
 
-spawn(function()
+delay(0, function()
     while true do
         for _, item in pairs(AttacksFolder:GetChildren()) do
             for _, name in pairs(ItemsToDelete) do
