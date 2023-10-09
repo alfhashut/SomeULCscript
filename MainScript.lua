@@ -2,10 +2,10 @@ local ItemsToDelete = {
     "CharaSlashModel",
     "KnifeWall",
     "KnifeRingModel",
-    "StorySlashModel"
-    "TouchIt"
-    "Warn"
-    "FakeSoul"
+    "StorySlashModel",
+    "TouchIt",
+    "Warn",
+    "FakeSoul",
     "SoulRingModel"
 }
 
